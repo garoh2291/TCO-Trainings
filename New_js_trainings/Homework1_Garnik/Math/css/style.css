@@ -1,0 +1,102 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+.main_wrapper {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.math {
+    width: 240px;
+    min-height: 400px;
+    background-image: url(../images/5950735.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 240px 400px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.blackboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+}
+
+.math .calculate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate p {
+    font-size: 2.5em;
+    font-weight: 900;
+    margin: 0 20px;
+
+}
+
+input {
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+input::placeholder {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+button {
+    width: 150px;
+    height: 70px;
+    border: none;
+    border-radius: 30px;
+    background-color: #d7f8ff;
+    color: red;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+h3:hover {
+    transform: scale(1.5);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: red;
+}
+
+h2:hover {
+    transform: rotate(30deg);
+}

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_wrapper{
+    position: relative;
+    margin: 30px auto;
+    width: 600px;
+    height: 480px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.slides {
+    position: absolute;
+    width: 572px;
+    height: 318px;
+    background-position: center;
+    transition: 1s;
+    top: 14px;
+    left: 14px;
+}
+
+
+

@@ -1,0 +1,28 @@
+.main_wrapper {
+    width: 400px;
+    height: 300px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.round {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.red_box {
+    background-color: red;
+}
+
+.yellow_box {
+    background-color: yellow;
+}
+
+.green_box {
+    background-color: green;
+}

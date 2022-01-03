@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line {
+    width: 32%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;  
+}
+
+.violet   {
+    width: 100%;
+    height: 30%;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+
+.new {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.green {
+    width: 47%;
+    height: 100%;
+    background-color: chartreuse;
+    border-radius: 20px;
+}
+
+.newblock {
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blue {
+    width: 100%;
+    height: 26%;
+    background-color: skyblue;
+    border-radius: 20px;
+}
+
+.red {
+    width: 100%;
+    height: 69%;
+    background-color: tomato;
+    border-radius: 20px;
+}
+
+.green2 {
+    width: 100%;
+    height: 45%;
+    background-color: chartreuse;
+    border-radius: 20px;
+}
+
+.new2 {
+    width: 100%;
+    height: 58%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.violet2   {
+    width: 100%;
+    height: 38%;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+
+.new3 {
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.newblock2 {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue2 {
+    width: 18%;
+    height: 100%;
+    background-color: skyblue;
+    border-radius: 20px;
+}
+
+.red2 {
+    width: 78%;
+    height: 100%;
+    background-color: tomato;
+    border-radius: 20px;
+}

@@ -1,0 +1,388 @@
+header {
+    width: 100%;
+    min-height: 805px;
+    background-color: #eff0f2;
+}
+
+
+.header_button {
+    width: 230px;
+    height: 55px;
+    border-radius: 3px;
+    margin-top: 140px;
+}
+
+
+.header_text h3{
+    font-size: 45px;
+    font-family: "Montserrat";
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 0px 9px 10px rgba(56, 5, 5, 0.24);
+}
+
+
+.header_text h3 span {
+    font-size: 45px;
+    font-family: "Montserrat";
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: 0px 9px 10px rgba(0, 0, 0, 0.24);
+    background-color: #a3deda;
+}
+
+.about {
+    width: 100%;
+    min-height: 985px;
+    background-color: #f8fafa;
+}
+
+.text_head h3 {
+    font-size: 38px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.902);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.text_head p {
+    font-size: 18px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.62);
+    text-transform: uppercase;
+    line-height: 1.556;
+}
+
+.about_text h4{
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.749);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about_text p {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.741);
+    line-height: 1.75;
+}
+
+
+.works {
+    width: 100%;
+    min-height: 1170px;
+    background-color: #ffffff;
+}
+
+.first_service {
+    background-color: #70f5ea;
+    min-height: 425px;
+}
+
+.close_service {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.close_service:hover {
+    color: #b2b2b2;
+    transform: scale(1.01);
+}
+
+.first_service h4 {
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgba(0, 0, 0, 0.831);
+    text-transform: uppercase;
+    line-height: 1.45;
+  }
+
+  .first_service p {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgba(0, 0, 0, 0.749);
+    line-height: 1.75;
+}
+
+.first_service i {
+    color: rgba(0, 0, 0, 0.831);
+    font-size: 24px;
+}
+  
+
+.second {
+    background-image: url(../images/service2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 425px;
+}
+
+.third {
+    background-image: url(../images/service3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 425px;
+}
+
+.fourth {
+    background-image: url(../images/service4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 425px;
+}
+
+.fifth {
+    background-image: url(../images/service5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 425px;
+}
+
+.sixth {
+    background-image: url(../images/service6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 425px;
+}
+
+.item_service h4 {
+    font-size: 20px;
+    font-family: "Myriad Pro";
+    color: rgba(255, 255, 255, 0.949);
+    text-transform: uppercase;
+    line-height: 1.45;
+}
+
+.item_service p {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgba(255, 255, 255, 0.902);
+    line-height: 1.563;
+    text-align: left;
+}
+
+.item_service h5 {
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgba(249, 251, 251, 0.902);
+    text-transform: uppercase;
+    line-height: 4.722;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.item_service h5:hover {
+    color: wheat;
+    transform: scale(1.01);
+
+}
+  
+  
+.team {
+    min-height: 1320px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+.they_says {
+    width: 100%;
+    min-height: 925px;
+    background-color: #f9fbfb;
+}
+  
+.says_text {
+    min-height: 365px;
+    background-color: #eaebed;
+}
+
+.says_text h3 {
+    font-size: 20px;
+    font-family: "Merriweather";
+    color: rgba(0, 0, 0, 0.949);
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.says_text h3 span {
+    font-size: 16px;
+    color: #cfcfd1;
+}
+
+.says_text p{
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.702);
+    line-height: 1.688;
+}
+  
+  
+
+.stars_icon i {
+    color: #f2da3b;
+}
+
+.cube_icon i {
+    color: #d0d0d0;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.cube_icon i:hover {
+    color: #71f6eb;
+    transform: scale(1.1);
+}
+
+.slide {
+    width: 55px;
+    height: 55px;
+    background-color: #f8fafa;
+    color: #b2b2b2;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.84);
+    transition: .5s;
+}
+
+.slide i {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.slide:hover {
+    background-color: #71f6eb;
+    color: black;
+}
+
+.contact_us {
+    min-height: 705px;
+    width: 100%;
+    background-image: url(../images/Bg\ copy\ 4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sendMEssage {
+    min-height: 460px;
+    background-color: rgba(70,89,93,0.8);
+}
+
+.mapMe {
+    min-height: 460px;
+    background-color: rgba(70,89,93,0.8);
+}
+
+.mapMe p {
+    font-size: 15px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.702);
+}
+
+.quotes {
+    position: relative;
+    transition: .5s;
+}
+
+.myQuote {
+    position: absolute;
+    background-color: #6ff6eb;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    margin: auto;
+    opacity: 0;
+    min-height: 240px;
+}
+
+.quotes:hover .myQuote {
+    opacity: 1;
+}
+
+.myQuote h4 {
+    font-size: 18px;
+    font-family: "Merriweather";
+    color: rgba(39, 39, 39, 0.949);
+    font-weight: bold;
+    line-height: 1.2;
+    position: relative;
+}
+
+.myQuote p {
+    font-size: 12px;
+    font-family: "Raleway";
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.5;
+}
+
+.myQuote i {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+
+.myQuote h4::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -46px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 18px solid #6ff6eb;
+}
+  
+.sedMsg {
+    max-width: 245px;
+    width: 100%;
+    height: 60px;
+    background-color: #6eeee4;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgba(0, 0, 0, 0.702);
+    text-transform: uppercase;
+    line-height: 1.556;
+}
+
+footer {
+    background-color: #262b2e;
+    min-height: 310px;
+}
+
+footer h4{
+    font-size: 20px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    line-height: 1.563;
+}
+
+footer h5 {
+    font-size: 16px;
+    font-family: "Raleway";
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.563;
+}
+  
+.linkBtn {
+    width: 50px;
+    height: 40px;
+    background-color: #3f4244;
+    color: #bbb8b9;
+    border: none;
+    cursor: pointer;
+}
+
+.linkBtn:hover {
+    background-color: #71f6eb;
+
+}
+

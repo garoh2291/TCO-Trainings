@@ -1,0 +1,32 @@
+@media screen and (max-width:1100px) {
+    header {
+        min-height: unset;
+        height: auto;
+    }
+
+    footer {
+        min-height: unset;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .myQuote {
+        min-height: unset;
+        height: auto;
+    }
+
+    .myQuote h4::before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        top: -34px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 18px solid #6ff6eb;
+    }
+}
+
+

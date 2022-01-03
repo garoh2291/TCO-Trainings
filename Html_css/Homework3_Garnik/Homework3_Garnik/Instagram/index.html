@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="icon" href="images/insta.png">
+</head>
+
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="center">
+                <div class="image">
+                    <img src="images/phone.png" alt="phone">
+                    <div class="picture">
+                        <img class="mySlides" src="images/d6bf0c928b5a.jpg" alt="image">
+                        <img class="mySlides" src="images/0a2d3016f375.jpg" alt="image">
+                        <img class="mySlides" src="images/6f03eb85463c.jpg" alt="image">
+                        <img class="mySlides" src="images/842fe5699220.jpg" alt="image">
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="reg">
+                        <div class="logoI">
+                            <img src="images/logo.png" alt="logo">
+                        </div>
+                        <form>
+                            <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+                            <br>
+                            <input type="password" placeholder="Пароль">
+                            <button class="enter">Войти</button>
+                         </form>
+                        <div class="or">
+                            <div class="line"></div>
+                            <div class="text">или</div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="fbent">
+                            <i class="fab fa-facebook-square"></i>
+                            <a href="#">Войти через Facebook</a>
+                        </div>
+                        <div class="forget">
+                            <a href="#">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <div class="regnew">
+                        <p>
+                            У вас ещё нет аккаунта?
+                            <a href="#">Зарегистрироваться</a>
+                        </p>
+                    </div>
+                    <p class="install">Установите приложение.</p>
+                    <div class="markets">
+                        <a href="#">
+                            <img src="images/appstore.png" alt="appstore">
+                        </a>
+                        <a href="#">
+                            <img src="images/playmarket.png" alt="playmarket">
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <footer>
+        <div class="conteiner">
+            <div class="list">
+                <ul class="about1">
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Блог</a>
+                    </li>
+                    <li>
+                        <a href="#">Вакансии</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">Конфиденциальность</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия</a>
+                    </li>
+                    <li>
+                        <a href="#">Популярные аккаунты</a>
+                    </li>
+                    <li>
+                        <a href="#">Хэштеги</a>
+                    </li>
+                    <li>
+                        <a href="#">Места</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram Lite</a>
+                    </li>
+
+                </ul>
+                <ul class="about2">
+                    <li>
+                        <a href="#">Красота</a>
+                    </li>
+                    <li>
+                        <a href="#">Танцы</a>
+                    </li>
+                    <li>
+                        <a href="#">Фитнес</a>
+                    </li>
+                    <li>
+                        <a href="#">Еда и напитки</a>
+                    </li>
+                    <li>
+                        <a href="#">Дом и сад</a>
+                    </li>
+                    <li>
+                        <a href="#">Музыка</a>
+                    </li>
+                    <li>
+                        <a href="#">Изобразительное искусство</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="last">
+                <form>
+                    <select name="language" >
+                        <option value="Afrikaans">Afrikaans</option>
+                        <option value="che">Čeština</option>
+                        <option value="Dansk">Dansk</option>
+                        <option value="Deutsch">Deutsch</option>
+                        <option value="English">English</option>
+                        <option value="English (UK)">English (UK)</option>
+                        <option value="ru" selected>Русский</option>
+                        <option value="Español">Español</option>
+                        <option value="Italiano">Italiano</option>
+                        <option value="ms">Bahasa Melayu</option>
+                        <option value="Nederlands">Nederlands</option>
+                        <option value="Polski">Polski</option>
+                        <option value="pb">Português (Brasil)</option>
+                        <option value="pp">Português (Portugal)</option>
+                        <option value="Svenska">Svenska</option>
+                        <option value="Filipino">Filipino</option>
+                        <option value="zh-cn">中文(简体)</option>
+                        <option value="ml">മലയാളം</option>
+                        <option value="uk">Українська</option>
+                    </select>
+                </form>
+                <span>© Instagram от Facebook, 2021</span>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); 
+        }
+        </script>
+
+</body>
+
+</html>

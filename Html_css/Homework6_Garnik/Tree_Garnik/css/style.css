@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    border: 3px solid lime;
+    border-radius: 30px;
+    height: 600px;
+    width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.bird {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 6;
+}
+
+.tree {
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.monk {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 181px;
+    bottom: 32px;
+}
+
+.apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.first {
+    top: 191px;
+    left: 147px;
+    z-index: 6;
+}
+
+.second {
+    top: 143px;
+    left: 226px;
+    z-index: 4;
+}
+
+.third {
+    top: 275px;
+    left: 107px;
+    z-index: 6;
+}
+.fourth {
+    top: 165px;
+    left: 423px;
+    z-index: 6;
+}
+.fifth {
+    top: 276px;
+    right: 185px;
+    z-index: 6;
+}
+.sixth {
+    top: 305px;
+    right: 90px;
+    z-index: 4;
+}
+.seventh {
+    top: 275px;
+    left: 241px;
+    z-index: 6
+}
+.eighth {
+    top: 251px;
+    right: 358px;
+    z-index: 6;
+}
+.ninth {
+    bottom: 192px;
+    left: 197px;
+    z-index: 6;
+    transition: 3s;
+}
+
+.newton {
+    height: 300px;
+    width: 200px;
+    position: absolute;
+    left: 410px;
+    bottom: -91px;
+    z-index: 4;
+}
+
+.conteiner:hover .ninth {
+    bottom: 90px;
+    left: 201px;
+    transform: rotate(30deg);
+}

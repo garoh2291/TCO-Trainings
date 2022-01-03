@@ -1,0 +1,8 @@
+.cube {
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right , blue , violet , red , yellow);
+    margin: 200px auto;
+    cursor: pointer;
+    transition: .3s;
+}

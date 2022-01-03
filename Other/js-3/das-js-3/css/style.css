@@ -1,0 +1,18 @@
+
+
+.light{
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    border: 1px solid;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 10px;
+}
