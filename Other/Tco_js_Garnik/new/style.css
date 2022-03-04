@@ -1,0 +1,19 @@
+.bigClass {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.smalldiv {
+    width: 200px;
+    height: 300px;
+    background-color: lime;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+
+}

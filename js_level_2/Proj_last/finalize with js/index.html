@@ -1,0 +1,253 @@
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Chat</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Welcome</span>
+                    <span class="profession">Online Chat</span>
+                </div>
+            </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" id="home" >
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#" id="info" >
+                            <i class='bx bx-code-alt icon'></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="chat">
+                        <a href="#">
+                            <i class='bx bx-message-rounded-dots icon' ></i>
+                            <span class="text nav-text">Chat</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="login">
+                        <a href="#">
+                            <i class='bx bx-log-in icon' ></i>
+                            <span class="text nav-text">Login</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-log-in-circle icon'></i>
+                            <span class="text nav-text">Registration</span>
+                        </a>
+                    </li> -->
+
+                    
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#" id="logOut">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+
+        <div class="home_content website text" id="home-content">
+            <h3>demo messenger</h3>
+            <div class="home_info">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, praesentium vitae sed
+                    necessitatibus inventore vel dolorum architecto voluptatibus suscipit labore aut laudantium
+                    laboriosam, fuga nobis? Sint sapiente facere est suscipit adipisci consectetur molestiae cum
+                    maiores illum? Numquam omnis quo aperiam est porro nihil. Doloribus at, eos ullam delectus nihil
+                    exercitationem repellendus dolores non necessitatibus modi magni voluptas iusto quas ratione
+                    quod quasi inventore dolor facilis officiis nemo culpa soluta tempore vel! Fugiat eos quia quis,
+                    ipsa neque error harum magnam sit totam eveniet modi sapiente nemo iusto quam expedita.
+                    Dignissimos, facilis. Atque quasi labore aliquam, quisquam fugiat enim! Ab, rerum veniam quaerat
+                    ea quos natus quia, vel nisi doloremque soluta obcaecati repellat deleniti ullam porro nemo
+                    aperiam nam consequuntur reprehenderit assumenda facere hic dolor? Accusamus, maiores eligendi
+                    officiis, facere omnis quam temporibus dolorum illum libero reprehenderit animi eveniet porro
+                    ducimus voluptatibus voluptatum voluptate aperiam impedit soluta, fugiat architecto optio.
+                    Inventore voluptates illo pariatur? Voluptate commodi tempora possimus quasi nisi beatae aut
+                    architecto esse pariatur officia, officiis magnam </p>
+            </div>
+        </div>
+        <div class="chat_content website hide text" id="chat-content">
+            <div class="chat_window" id="chat-window">
+
+            </div>
+            <form>
+                <input type="text" id="message-text" placeholder="Write message...">
+                <button type="submit" id="sendBtn">Send</button>
+            </form>
+        </div>
+        <div class="info_content website hide text" id="info-content">
+            <div class="accordion_info">
+                <div class="info-small active">
+                    <h3>
+                        About Me
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                        necessitatibus tempore
+                        praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                        numquam non,
+                        possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                        totam fugiat
+                        voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                    </p>
+
+                </div>
+                <div class="info-small">
+                    <h3>
+                        Other Projects
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                        necessitatibus tempore
+                        praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                        numquam non,
+                        possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                        totam fugiat
+                        voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                    </p>
+                </div>
+                <div class="info-small">
+                    <h3>
+                        Work Experience
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                        necessitatibus tempore
+                        praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                        numquam non,
+                        possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                        totam fugiat
+                        voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                    </p>
+                </div>
+                <div class="info-small">
+                    <h3>
+                        About Messanger
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                        necessitatibus tempore
+                        praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                        numquam non,
+                        possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                        totam fugiat
+                        voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                    </p>
+                </div>
+                <div class="info-small">
+                    <h3>
+                        Contact
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                        necessitatibus tempore
+                        praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                        numquam non,
+                        possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                        totam fugiat
+                        voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                    </p>
+                </div>
+            </div>
+            <div class="mobile_phone">
+                <img src="images/phone.png" alt="phone">
+                <div class="chat_in_phone">
+                    <img id="slide-img" src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="login_content website hide" id="login-content">
+            <div class="container_login" id="container-login">
+                <div class="form-container sign-up-container">
+                    <form action="#">
+                        <h1>Create Account</h1>
+                        <input type="text" placeholder="First Name" id="fNameReg" />
+                        <input type="text" placeholder="Last Name" id="lNameReg" />
+                        <input type="email" placeholder="Email" id="emailReg" />
+                        <input type="password" placeholder="Password" id="pwdReg" />
+                        <button type="submit" id="sigUpBtn">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-container sign-in-container">
+                    <form action="#">
+                        <h1>Sign in</h1>
+                        <input id="loginEmail" type="text" placeholder="Email" />
+                        <input id="loginPassword" type="password" placeholder="Password" />
+                        <button type="submit" id="signInBtn">Sign In</button>
+                    </form>
+                </div>
+                <div class="overlay-container">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Welcome Back!</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello, Friend!</h1>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js" type="module"></script>
+
+</body>
+</html>

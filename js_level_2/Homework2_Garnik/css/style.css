@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    margin: 0 auto;
+}
+
+.wrapper table th {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(to bottom , #414241 ,#212121 );
+    color: #929B95;
+    box-shadow: -1px 3px 29px -2px rgba(0,0,0,0.86);
+    font-weight: 700;
+}
+
+.wrapper table td {
+    width: 200px;
+    height: 30px;
+    background: linear-gradient(to bottom , #414241 ,#212121 );
+    color: #929B95;
+    box-shadow: -1px 3px 29px -2px rgba(0,0,0,0.86);
+    font-weight: 700;
+}
+
+
+
+button {
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to bottom , #414241 ,#212121 );
+    color: #929B95;
+    box-shadow: -1px 3px 29px -2px rgba(0,0,0,0.86);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background: linear-gradient(to bottom , #114d11 ,#15d84f );
+    color: wheat;
+}

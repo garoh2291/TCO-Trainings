@@ -87,10 +87,10 @@ let users = [
  console.log(someUsers);
 
 
-// let lengths = ["Bilbo", "Gandalf", "Nazgul"];
+let lengths = ["Bilbo", "Gandalf", "Nazgul"];
 
-// let newMap = lengths.map(x => console.log(x + "hello"));
-// console.log(lengths)
+let newMap = lengths.map(x => console.log(x + "hello"));
+console.log(lengths)
 
 // let names = 'Вася, Петя, Маша';
 
@@ -135,10 +135,10 @@ let users = [
 //     console.log(i);
 // }
 
-let arr = [5, 6, 16, 4, 1, 12, 7, 9, 21, 2];
-for(let i in arr){
-    console.log(arr[i])
-}
+// let arr = [5, 6, 16, 4, 1, 12, 7, 9, 21, 2];
+// for(let i in arr){
+//     console.log(arr[i])
+// }
 
 
 // for(let i = 0; i < 10; i++){

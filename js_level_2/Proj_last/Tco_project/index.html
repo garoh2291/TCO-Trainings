@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Messenger</title>
+</head>
+
+<body>
+    <div class="forload">
+        <div class="loader-bg">
+            <h3>Loading...</h3>
+          <div class="loader">
+              <span></span>
+          </div>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <nav>
+                <ul class="main_menu">
+                    <li>
+                        <a href="#" id="home" class="nav-button">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" id="chat" class="nav-button">Chat</a>
+                    </li>
+                    <li>
+                        <a href="#" id="info" class="nav-button">Info</a>
+                    </li>
+                    <li>
+                        <a href="#" id="login" class="nav-button">Login</a>
+                    </li>
+                    <li>
+                        <button id="dark-btn" class="dark_btn">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="light-btn" class="light_btn">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="main_content">
+        <div class="container">
+            <div class="welcome_content website" id="demo">
+                <p>Welcome to my messenger</p>
+            </div>
+            <div class="home_content website hide" id="home-content">
+                <h3>demo messenger</h3>
+                <div class="home_info">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, praesentium vitae sed
+                        necessitatibus inventore vel dolorum architecto voluptatibus suscipit labore aut laudantium
+                        laboriosam, fuga nobis? Sint sapiente facere est suscipit adipisci consectetur molestiae cum
+                        maiores illum? Numquam omnis quo aperiam est porro nihil. Doloribus at, eos ullam delectus nihil
+                        exercitationem repellendus dolores non necessitatibus modi magni voluptas iusto quas ratione
+                        quod quasi inventore dolor facilis officiis nemo culpa soluta tempore vel! Fugiat eos quia quis,
+                        ipsa neque error harum magnam sit totam eveniet modi sapiente nemo iusto quam expedita.
+                        Dignissimos, facilis. Atque quasi labore aliquam, quisquam fugiat enim! Ab, rerum veniam quaerat
+                        ea quos natus quia, vel nisi doloremque soluta obcaecati repellat deleniti ullam porro nemo
+                        aperiam nam consequuntur reprehenderit assumenda facere hic dolor? Accusamus, maiores eligendi
+                        officiis, facere omnis quam temporibus dolorum illum libero reprehenderit animi eveniet porro
+                        ducimus voluptatibus voluptatum voluptate aperiam impedit soluta, fugiat architecto optio.
+                        Inventore voluptates illo pariatur? Voluptate commodi tempora possimus quasi nisi beatae aut
+                        architecto esse pariatur officia, officiis magnam </p>
+                </div>
+            </div>
+            <div class="chat_content website hide" id="chat-content">
+                <div class="chat_window" id="chat-window">
+
+                </div>
+                <form>
+                    <input type="text" id="message-text" placeholder="Write message...">
+                    <button type="submit" id="sendBtn">Send</button>
+                </form>
+            </div>
+            <div class="info_content website hide" id="info-content">
+                <div class="accordion_info">
+                    <div class="info-small active">
+                        <h3>
+                            About Me
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                            necessitatibus tempore
+                            praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                            numquam non,
+                            possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                            totam fugiat
+                            voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                        </p>
+
+                    </div>
+                    <div class="info-small">
+                        <h3>
+                            Other Projects
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                            necessitatibus tempore
+                            praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                            numquam non,
+                            possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                            totam fugiat
+                            voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                        </p>
+                    </div>
+                    <div class="info-small">
+                        <h3>
+                            Work Experience
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                            necessitatibus tempore
+                            praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                            numquam non,
+                            possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                            totam fugiat
+                            voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                        </p>
+                    </div>
+                    <div class="info-small">
+                        <h3>
+                            About Messanger
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                            necessitatibus tempore
+                            praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                            numquam non,
+                            possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                            totam fugiat
+                            voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                        </p>
+                    </div>
+                    <div class="info-small">
+                        <h3>
+                            Contact
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum aliquam
+                            necessitatibus tempore
+                            praesentium modi voluptatum dolores quod. Distinctio eaque ipsam quo quis tempore nam fugit
+                            numquam non,
+                            possimus obcaecati asperiores dolorem autem doloribus culpa explicabo accusantium unde ex
+                            totam fugiat
+                            voluptate rem repudiandae animi. Provident est porro aspernatur nesciunt?
+                        </p>
+                    </div>
+                </div>
+                <div class="mobile_phone">
+                    <img src="images/phone.png" alt="phone">
+                    <div class="chat_in_phone">
+                        <img id="slide-img" src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="login_content website hide" id="login-content">
+                <div class="container_login" id="container-login">
+                    <div class="form-container sign-up-container">
+                        <form action="#">
+                            <h1>Create Account</h1>
+                            <input type="text" placeholder="Name" id="nameReg" />
+                            <input type="email" placeholder="Email" id="emailReg" />
+                            <input type="text" placeholder="Login" id="loginReg" />
+                            <input type="password" placeholder="Password" id="pwdReg" />
+                            <button type="submit" id="sigUpBtn">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h1>Sign in</h1>
+                            <input id="loginLogin" type="text" placeholder="Login" />
+                            <input id="loginPassword" type="password" placeholder="Password" />
+                            <button type="submit" id="signInBtn">Sign In</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Welcome Back!</h1>
+                                <p>To keep connected with us please login with your personal info</p>
+                                <button class="ghost" id="signIn">Sign In</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Hello, Friend!</h1>
+                                <p>Enter your personal details and start journey with us</p>
+                                <button class="ghost" id="signUp">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/script.js" type="module"></script>
+</body>
+
+</html>

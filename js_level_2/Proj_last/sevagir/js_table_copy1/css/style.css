@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    margin: 0 auto;
+}
+
+.wrapper table th {
+    width: 200px;
+    height: 30px;
+    border: 1px solid;
+}
+
+.wrapper table td {
+    width: 200px;
+    height: 30px;
+    border: 1px solid;
+    text-align: right;
+}
+
