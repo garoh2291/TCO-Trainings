@@ -64,7 +64,7 @@
 
 // logOddNumbFromArray(array2)
 
-/*--------------------Homework 6 -----------------*/
+/*--------------------Homework 7 -----------------*/
 
 // // 1. Հաշվել զանգվածի զույգ տարրերի արտադրյալը (կիրառել forEach)
 
@@ -94,3 +94,109 @@
 
 // const filteredArray = numArray3.filter(item => item !== k)
 // console.log(filteredArray);
+
+
+
+/*--------------------Homework 8 -----------------*/
+
+
+
+
+// // 1. Ստեղծել Person անունով կոնստրուկտոր, որը կստեղծի eat, sleep, work մեթոդներով նոր օբյեկտ: 
+// // Ստեղծել User անունով կոնստրուկտոր, որը կընդունի name, surname, profession արգումենտները և կստեղծի նոր օբյեկտ՝ 
+// // տրված հատկություններով և eat, sleep, work հատկությունները կժառանգի Person-ի ստեղծած օբյեկտից:
+// // Ստեղծել մի քանի տարբեր User օբյեկտներ և տպել դրանք։
+
+// function Person(){
+//     this.eat = function(){
+//         console.log(`${this.name} eats Hot-dog`);
+//     };
+//     this.sleep = function(){
+//         console.log(`${this.name} sleeps 8 hours`);
+//     };
+//     this.work = function(){
+//         console.log(`${this.name} works as a ${this.profession}`);
+//     }
+// };
+
+
+// function User(name,surname,profession){
+//     this.name  = name ;
+//     this.surname  = surname ; 
+//     this.profession  = profession ; 
+// };
+
+// User.prototype = new Person();
+
+// const user1  = new User("Garnik","Hovsepyan","Geologist");
+// const user2 = new User("Henrikh","Mkhitaryan","Footballer");
+
+// user1.eat();
+// user2.work();
+
+// // 2. Խնդիր 205, էջ 29
+
+// const digitsArray = []
+// let num = 242314234824578;
+// while (num >= 1) {
+//     const digit = num % 10; 
+//     digitsArray.push(digit)
+//     num = (num - digit) / 10;
+// }
+
+// digitsArray.reverse()
+// console.log(digitsArray);
+
+// // 3. Խնդիր 284, էջ 33
+// const X = [7 , 11 , 4, 9 , 5 , 8 , 57 , 14 , 13 , 97 , 31];
+// const a = 10;
+// const b = 40;
+
+// const Y  = X.filter(item => {
+//     if(item >=a && item <= b) return item
+// })
+
+// console.log(Y);
+
+// // 4. Տրված է կոտորակային թվերից բաղկացած զանգված (օրինակ՝ [1.3, 4.895, 96.547]) : 
+// // Գտնել այն թիվը, որը ամենամոտն է որևէ բնական թվի։ Օրինակ՝ բերված զանգվածում 4.895 թիվն ավելի մոտիկ է 5-ին։
+// //  Խնդիրը լուծելու համար կարելի է զանգվածի հերթական թիվը կլորացնել դեպի վեր, հետո դրանից հանել սկզբնական թիվը, 
+// //  ու հետո համեմատել բոլոր տարբերությունները, որը որ լինի ամենափոքրը, ուրեմն նրա թիվը կլինի որոնելին։
+
+// const floatNumbersArray = [1.3 , 4.895 , 96.547, 2.011 , 12.956 ]
+// const smallDifferenceNumber = floatNumbersArray.reduce((result,item,index,array)=>{
+//     const fakeMinDifference = Math.abs(array[index] - Math.floor(array[index]));
+//     if( fakeMinDifference < result.mindifference ) {
+//         result.mindifference = fakeMinDifference ;
+//         result.nearestNumb = item;
+//     }
+//     return result
+// },{
+//     mindifference:  Math.abs(floatNumbersArray[0] - Math.floor(floatNumbersArray[0])),
+//     nearestNumb : floatNumbersArray[0]
+// })
+
+// console.log(smallDifferenceNumber);
+
+// 1.Ուենք կրկնվող տարերով զանգված:
+// Գտնել,թե որ անդամից քանի հատ ունենք զանգվածում
+const testarray = [3,3,2,5,2,3,5,3,4,4,3,5,4,2,1,2,5,2,2,3,1];
+
+function getRepeatNumbCount(array) {
+    const sortArr = array.sort((a,b)=> a-b);
+    const filteredArray = sortArr.filter((item, index,array)=> array[index] - array[index-1] !== 0);
+
+    filteredArray.forEach(value => {
+        let count = array.filter(x=>x === value).length;
+        console.log(`The number ${value} is repeating ${count} times`); 
+    });
+}
+getRepeatNumbCount(testarray)
+//////////////////////////////////////////////////////////////////////////////
+const countObj = {};
+
+testarray.forEach(item => {
+    countObj[item] = ++countObj[item] || 1
+});
+
+console.log(countObj);
