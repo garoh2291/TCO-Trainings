@@ -36,8 +36,8 @@ let myApi = $.ajax({
 // Клиентские ошибки 400 - 499
 // Серверные ошибки 500 - 599
 
-// async function ftFunc(){
-//     let ft = await fetch("https://jsonplaceholder.typicode.com/posts");
-//     console.log(ft)
-// }
-// ftFunc();
+async function ftFunc(){
+    let ft = await fetch("https://jsonplaceholder.typicode.com/posts");
+    console.log(ft)
+}
+ftFunc();
