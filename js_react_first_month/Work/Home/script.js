@@ -180,6 +180,8 @@
 
 // 1.Ուենք կրկնվող տարերով զանգված:
 // Գտնել,թե որ անդամից քանի հատ ունենք զանգվածում
+
+//1st method
 const testarray = [3,3,2,5,2,3,5,3,4,4,3,5,4,2,1,2,5,2,2,3,1];
 
 function getRepeatNumbCount(array) {
@@ -192,7 +194,7 @@ function getRepeatNumbCount(array) {
     });
 }
 getRepeatNumbCount(testarray)
-//////////////////////////////////////////////////////////////////////////////
+//2nd method
 const countObj = {};
 
 testarray.forEach(item => {
