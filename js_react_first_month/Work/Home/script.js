@@ -178,30 +178,139 @@
 
 // console.log(smallDifferenceNumber);
 
+
+/*--------------------Homework 9 -----------------*/
+
 // 1.Ուենք կրկնվող տարերով զանգված:
 // Գտնել,թե որ անդամից քանի հատ ունենք զանգվածում
 
 //1st solution
-const testarray = [3,3,2,5,2,3,5,3,4,4,3,5,4,2,1,2,5,2,2,3,1];
+// const testarray = [3,3,2,5,2,3,5,3,4,4,3,5,4,2,1,2,5,2,2,3,1];
 
-function getRepeatNumbCount(array) {
-    const sortArr = array.sort((a,b)=> a-b);
-    const filteredArray = sortArr.filter((item, index,array)=> array[index] - array[index-1] !== 0);
+// function getRepeatNumbCount(array) {
+//     const sortArr = array.sort((a,b)=> a-b);
+//     const filteredArray = sortArr.filter((item, index,array)=> array[index] - array[index-1] !== 0);
 
-    filteredArray.forEach(value => {
-        let count = array.filter(x=>x === value).length;
-        console.log(`The number ${value} is repeating ${count} times`); 
-    });
+//     filteredArray.forEach(value => {
+//         let count = array.filter(x=>x === value).length;
+//         console.log(`The number ${value} is repeating ${count} times`); 
+//     });
+// }
+// getRepeatNumbCount(testarray)
+// //2nd solution
+
+// function countFunc(arr){
+//     const obj = {}
+//     arr.forEach(item=>{
+//         obj[item] = ++ obj[item] || 1
+//     })
+//     return obj
+// }
+
+// console.log(countFunc(testarray));
+
+////////////////////////////////////
+
+
+/*--------------------Homework 10 -----------------*/
+// Տնային 1. Ստեղծել Mynumber անունով class, որի կոնստրուկտորը ստանում է number տիպի արգումենտ և որը ստեղծում է նոր օբյեկտ՝ value property-ով։ 
+// value-ի արժեքը պետք է լինի կոնստրուկտորին փոխանցված թիվը։ Նոր օբյեկտը պետք է ունենա add մեթոդ, 
+// որը կընդունի մեկ number տիպի արգումենտ և նրա value-ին կգումարի փոխանցված թիվը, այնուհետև կվերադարձնի փոփոխված օբյեկտը, 
+// այսինքն՝ եթե մեր օբյեկտը ունի հետևյալ տեսքը՝ myNum = {value: 15}; myNum.add(4) արտահայտությունից հետ օբյեկտը կունենա հետևյալ տեսքը՝ myNum = {value: 19}։ 
+// Համանման ձևով ստեղծել նաև sub մեթոդ՝ հանման գործողությունը կատարելու համար։ Բացի այդ, օբյեկտը պետք է ունենա toNumber և toString մեթոդներ, 
+// որոնք կանչելիս կվերադարձնեն օբյեկտի value-ն՝ համապատասխանաբար number և string տիպերով, օրինակ՝ b = myNum.toNumber()
+// // 19 number, c = myNum.toString() // “19” string ։ Mynumber class –ից ստեղծել մի քանի օբյեկտներ, 
+// կանչել և տպել դրանց բոլոր property-ները։ Ուշադրություն՝ նոր օբյեկտը պետք է ունենա միայն value սեփական property-ն։
+
+
+class Mynumber {
+    constructor(value){
+        this.value = value
+    }
+    add(num) {
+        this.value = this.value + num
+        return this
+    }
+    sub(num){
+        this.value = this.value - num
+        return this
+    }
+    toString(){
+        return this.value.toString()
+    }
+    toNumber(){
+        return Number(this.value)
+    }
 }
-getRepeatNumbCount(testarray)
-//2nd solution
 
-function countFunc(arr){
-    const obj = {}
-    arr.forEach(item=>{
-        obj[item] = ++ obj[item] || 1
-    })
-    return obj
-}
+const myNum = new Mynumber(12);
+myNum.add(80);
+const c = myNum.toString();
+const b = myNum.toNumber();
 
-console.log(countFunc(testarray));
+// 2. Ստեղծել MyString անունով class, որը կունենա գլոբալ String կոնստրուկտորի բոլոր հատկությունները։ 
+// MyString-ը պետք է ունենա getPolyndrom ստատիկ մեթոդ, որը որպես արգումենտ ընդունում է string և 
+// վերադարձնում տողում գտնված ամենաերկար պոլինդրոմ բառը։
+// (օրինակ՝ “javascript racecar class random string” -> “racecar”) :
+
+
+// const text = "javascript racecar class random string"
+
+// class MyString extends String {
+//     static getPolyndrom(string){
+//         const textArray = text.split(" ");
+//         const polyndrom = textArray.filter(item=> item === item.split("").reverse().join(""));
+//         return polyndrom
+//     }
+//     constructor(){
+//         super()
+//     }
+// };
+
+
+// console.log(MyString.getPolyndrom(text));
+
+
+// 3. Ունենք հետևյալ class-ը
+
+// total հատկության համար ավելացնել setter, որի ժամանակ, 
+// եթե total -ը փոփոխենք ինչ-որ չափով, որը մեծ կլինի նախկին արժեքից,
+// պետք է վերջիններիս տարբերությունը հավասարաչափ բաժանել աշխատողների միջև,
+// այսինքն նրանց աշխատավարձերին գումարել ստացված մասը։ Եթե նոր total -ի արժեքը նախկինից փոքր է, 
+// ապա յուրաքանչյուր աշխատողի աշխատավարձից հանում ենք ստացված տարբերության իր մասը։
+
+// class Staff{
+//     John = 150;
+//     Sarah = 200;
+//     Nick = 963;
+//     Carl = 134;
+//     get total() {
+//           let sum = 0;
+//           Object.values(this).forEach(salary => {
+//               sum += salary;
+//           });
+//           return sum;
+//         }
+    
+//     set setTotal(newTotal){
+//         const difference = Math.abs(newTotal - this.total)
+//         const differPerPerson = difference / Object.values(this).length
+//         if (newTotal > this.total) {
+//             for (const key in this) {
+//                 this[key] = this[key] + differPerPerson
+//             }
+//         }else if(newTotal < this.total){
+//             for (const key in this) {
+//                 this[key] = this[key] - differPerPerson
+//             }
+//         }else{
+//             return
+//         }
+      
+//     }
+//   }
+
+
+// const staff = new Staff
+// staff.setTotal= 1721;
+// console.log(staff.total);

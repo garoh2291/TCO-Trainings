@@ -47,12 +47,6 @@ function Users(selector,userlist){
         
     })
 ////////////////////////////////////////////
-
-
-
-
-
-
     this.saveFrom =  function(data){
         
         const newObj = {
@@ -62,8 +56,6 @@ function Users(selector,userlist){
         this.items.push(newObj)
         console.log(this.items);
         console.log(this.items[this.items.length - 1]);
-    
-        
     }
 }
 

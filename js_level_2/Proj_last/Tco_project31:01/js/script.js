@@ -1,25 +1,21 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js";
-import {getDatabase, ref,set,get, onValue } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-database.js";
-
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-analytics.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js";
+import { ref,set,onValue, getDatabase } from "https://www.gstatic.com/firebasejs/9.6.4/firebase-database.js";
 var loggedUser = {};
 let id = 1;
 let msgId = 1;
 const firebaseConfig = {
-    apiKey: "AIzaSyBefT3W3cq-htP4b5OHIIEbZQiXJyjuxBM",
-    authDomain: "final-task-tco.firebaseapp.com",
-    databaseURL: "https://final-task-tco-default-rtdb.firebaseio.com",
-    projectId: "final-task-tco",
-    storageBucket: "final-task-tco.appspot.com",
-    messagingSenderId: "569384291896",
-    appId: "1:569384291896:web:4c6384b87c13699b65a0cd",
-    measurementId: "G-NJ8E8VZLKB"
-};
+    apiKey: "AIzaSyC0UAso5okHP_VKNEkmEoUutXw25a7-gRo",
+    authDomain: "finalmessenger-d8416.firebaseapp.com",
+    projectId: "finalmessenger-d8416",
+    storageBucket: "finalmessenger-d8416.appspot.com",
+    messagingSenderId: "828781259368",
+    appId: "1:828781259368:web:519ef9168214f4a92a69dd",
+    measurementId: "G-5K0SBL9KPZ"
+  };
 
 let userArray =[]
 let messageArray = []
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getDatabase();
 const userRef = ref(db,'Users');
 const messageRef = ref(db,'messages');

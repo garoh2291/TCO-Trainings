@@ -1,0 +1,44 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+table {
+    border-spacing: 3px 8px;
+  }
+
+td {
+    width: 60px;
+    height: 40px;
+    background-color: #cfccc6;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.number-null {
+    border-radius:  0 0 0  10px;
+}
+
+.screen-calc {
+    border-radius: 10px 10px 0 0;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.is-equal {
+    border-radius:  0 0 10px 0;
+}
