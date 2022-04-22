@@ -1,0 +1,19 @@
+.text-head {
+    width: 70%;
+    margin: 0 auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-head h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: -15px;
+}
+
+.text-head p {
+    font-weight: 500;
+}

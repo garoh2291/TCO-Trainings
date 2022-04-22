@@ -21,11 +21,12 @@
 
 // ajax avtomat parse e anum 
 let myApi = $.ajax({
-    method: "GET",
-    url: 'https://jsonplaceholder.typicode.com/users',
+  method: "DELETE",
+  url: 'https://api.karapetyankaren.com/items/read.php',
+  headers: {"Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE"}
 
     success: function(data) {
-      data.forEach(el => console.log(el.name))
+      console.log(data);
     }
 })
 
@@ -36,8 +37,8 @@ let myApi = $.ajax({
 // Клиентские ошибки 400 - 499
 // Серверные ошибки 500 - 599
 
-async function ftFunc(){
-    let ft = await fetch("https://jsonplaceholder.typicode.com/posts");
-    console.log(ft)
-}
-ftFunc();
+// async function ftFunc(){
+//     let ft = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     console.log(ft)
+// }
+// ftFunc();

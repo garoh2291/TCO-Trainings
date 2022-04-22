@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E4E9F7;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    transition: .2s;
+}
+
+.small-cont {
+    width: 70%;
+    margin-left: 300px;
+}
+
+.head_text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.head_text h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #695CFE;
+    letter-spacing: .2rem;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 700px;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+}
+
+.add_user {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #695CFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -80px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.add_user:hover {
+    background: #28b485;
+
+}
+
+.add_user i {
+    font-size: 50px;
+    color: #E4E9F7;
+}
+
+.user_card {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 210px;
+    height: 300px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 15%);
+    transition: .2s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.user_card:hover {
+    box-shadow: 2rem 2rem 6rem 2rem rgb(0 0 0 / 15%);
+    transform: scale(1.01);
+}
+
+.delete_user {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.delete_user i {
+    font-size: 20px;
+    color: #695CFE;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.delete_user i:hover {
+    color: #28b485;
+    transform: scale(1.1);
+}
+
+.user_info {
+    width: 100%;
+    height: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.avatar-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .2s;
+}
+
+.avatar-img:hover {
+    transform: scale(1.05);
+}
+
+.user-info-wrapper {
+    width: 100%;
+    height: calc(100% -150px);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.user-info {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.user-info:hover {
+    color: #28b485;
+}
+
+
+.form_new_user {
+    width: 400px;
+    height: 500px;
+    background: #E4E9F7 ;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 2px black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    margin: 0 auto; 
+    padding: 10px;
+    z-index: 10;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.form_new_user form{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+}
+
+form input {
+    width: 70%;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100px;
+    height: 40px;
+    background: #695CFE;
+    color: #E4E9F7;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: .2s;
+}
+
+form button:hover {
+    background: #28b485;
+}
+
+form label {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.show {
+    visibility: visible!important;
+    opacity: 1!important;
+}
+
+
+.show_side {
+    visibility: visible!important;
+    opacity: 1!important;
+    animation: animeright .2s linear ;
+}
+
+
+.sidebar {
+    /* left: -300px; */
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: #E4E9F7;
+    box-shadow: 2px 2px 10px 2px black;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s linear;
+    padding: 5px;
+}
+
+@keyframes animeright {
+    from {left: -300px;}
+    to {left: 0}
+}
+
+/* side css  */
+
+.side_card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.avatar-img-side{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: .2s;
+}
+
+.user-info-wrapper-side {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.user-info-side {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.user-info-side:hover {
+    color: #28b485;
+}

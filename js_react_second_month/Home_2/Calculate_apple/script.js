@@ -33,9 +33,13 @@ document.querySelector('.buttons').onclick = (event)=>{
     if(!event.target.classList.contains('btn-text')) return;
     if(event.target.classList.contains('erase')) return;
     
-    const key = event.target.textContent.trim();
+    let key = event.target.textContent.trim();
 
     if(digit.includes(key)){
+        if($screen.textContent === '0' && key === '0') return;
+        if($screen.textContent === '0' && key === '.'){
+            a = 0
+        } 
         if(b === '' && sign === ''){
             a += key
             $screen.textContent = a
@@ -43,16 +47,19 @@ document.querySelector('.buttons').onclick = (event)=>{
             b = key;
             finish = false;
             $screen.textContent = b
+        }else if(a!=='' && b!=='' && sign!==''){
+            
         }else{
             b += key
             $screen.textContent = b
         }
+        console.log(a,sign,b);
         return
     }
 
     if(action.includes(key)){
         sign = key;
-        $screen.textContent = sign;
+        // $screen.textContent = sign;
     }
 
     if(key === '='){

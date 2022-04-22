@@ -1,0 +1,18 @@
+.head-stars {
+    color: #5dba2f;
+    margin: 20px auto;
+    width: 30%;
+    height: 20px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+i {
+    font-size: 12px;
+    margin: 0 1px;
+}
+
+.small {
+    font-size: 10px;
+}
